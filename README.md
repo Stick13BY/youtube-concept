@@ -2,8 +2,8 @@
 Made by Aristarkh Minsky
 
 ## Technologies
-HTML
-CSS
-Normalize.css
-SVG Sprites
+- HTML
+- CSS
+- Normalize.css
+- SVG Sprites
 
