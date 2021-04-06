@@ -1,0 +1,100 @@
+/*Селектор для расчёта высоты и ширины объектов*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*Шапка*/
+
+.header {
+  display: flex;
+  align-items: center; /*свойство для выравнивания элементов шапки по центру*/
+  padding-top: 20px; /*внутренний отступ сверху 20 пикс*/
+  padding-bottom: 20px; /*внутр отступ снизу 20 пикс*/
+  padding-left: 32px;
+  padding-right: 70px;
+}
+/*Кнопка главного меню возле лого*/
+.menu-button {
+  padding: 0; /*Внутренний отступ = 0*/
+  display: flex; /*Свойство для возможности выстраивания элементов руками, а не автомаически*/
+  flex-direction: column; /*Выстраиваем эементы внутри колонной*/
+  justify-content: space-between; /*Добавляем пространство между полосками*/
+  background-color: #fff;
+  width: 20px;
+  height: 17px;
+  border: none;
+  margin-right: 28px; /*Даём пространство правее кнопки*/
+  cursor: pointer; /*Меняем указатель стрелку на палец*/
+}
+/*Полоски на кнопке главного меню*/
+.menu-line {
+  /*Задаём параметр для отображения линии блоком*/
+  display: block;
+  background: #1f2022;
+  width: 20px;
+  height: 3px;
+  border-radius: 20px; /*Скругляем края линии*/
+}
+.logo {
+  margin-right: 59px;
+}
+/* Группа строки поиска */
+.input-group {
+  background: #ebebeb;
+  border-radius: 22px;
+  display: flex;
+  justify-content: space-between; /*Расставляем внутренние элементы по углам*/
+  align-items: center;
+  padding-right: 17px;
+  max-width: 830px;
+  width: 50%;
+}
+.input-search {
+  /* Настраиваем окно ввода поиска */
+  background-color: transparent;
+  border: none; /*Окно поиска без прорисовки границ*/
+  /* Прорисовываем пространство внутри*/
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+.button-search {
+  padding: 0;
+  width: 19px;
+  height: 19px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.icon-search {
+  fill: #000;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.icons-link {
+  text-decoration: none;
+  opacity: 0.24;
+}
+/* Добавляем затемнение иконок доп меню при наведении */
+.icons-link:hover {
+  opacity: 0.7;
+}
+/*Добавляем пространства справа от всех иконок, кроме последней*/
+.icons-link:not(:last-child) {
+  margin-right: 50px;
+}
+.user {
+  margin-left: 45px;
+}
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
